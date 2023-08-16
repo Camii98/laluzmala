@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e672726a4c2d0934e91bf903859272e2
+guid: 89a91b489ba2ea34587986f7f9f5c7a3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: hurt
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 78
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -47,7 +47,7 @@ ModelImporter:
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
-      loopBlendPositionY: 1
+      loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
@@ -528,100 +528,100 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Dying(Clone)
+    - name: hurt(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: port:Hips
-      parentName: Dying(Clone)
-      position: {x: -0.005538572, y: 0.89720136, z: -0.0036417453}
-      rotation: {x: -0.03108586, y: -0.0091885105, z: -0.008315627, w: 0.99943995}
+      parentName: hurt(Clone)
+      position: {x: 0.0031532506, y: 0.8935885, z: -0.0044597005}
+      rotation: {x: -0.1175689, y: 0.018817095, z: -0.034806885, w: 0.9922762}
       scale: {x: 1, y: 1, z: 1}
     - name: port:Spine
       parentName: port:Hips
-      position: {x: -0, y: 0.0823, z: -0.002}
-      rotation: {x: 0.05182062, y: -0.032010768, z: 0.023338519, w: 0.9978704}
+      position: {x: -0, y: 0.0808, z: -0.0024}
+      rotation: {x: 0.116448134, y: -0.002457618, z: 0.037099503, w: 0.9925006}
       scale: {x: 1, y: 1, z: 1}
     - name: port:Spine1
       parentName: port:Spine
-      position: {x: -0, y: 0.0961, z: 0}
-      rotation: {x: 0.010800329, y: -0.011689507, z: -0.020701483, w: 0.99965906}
+      position: {x: -0, y: 0.0943, z: 0}
+      rotation: {x: 0.051088024, y: -0.006874075, z: 0.023939615, w: 0.9983835}
       scale: {x: 1, y: 1, z: 1}
     - name: port:Spine2
       parentName: port:Spine1
-      position: {x: -0, y: 0.1098, z: 0}
-      rotation: {x: 0.0019298132, y: -0.011094866, z: -0.00944803, w: 0.999892}
+      position: {x: -0, y: 0.1078, z: 0}
+      rotation: {x: 0.05103409, y: -0.0076494706, z: 0.024419168, w: 0.99836904}
       scale: {x: 1, y: 1, z: 1}
     - name: port:Neck
       parentName: port:Spine2
-      position: {x: -0, y: 0.1236, z: 0}
-      rotation: {x: 0.0061641885, y: -0.028452624, z: 0.0046761204, w: 0.99956524}
+      position: {x: -0, y: 0.1212, z: 0}
+      rotation: {x: 0.004342908, y: -0.004363628, z: -0.010829913, w: 0.99992245}
       scale: {x: 1, y: 1, z: 1}
     - name: port:Head
       parentName: port:Neck
-      position: {x: -0, y: 0.0466, z: 0.01}
-      rotation: {x: -0.005763532, y: -0.028394727, z: 0.0050152717, w: 0.9995676}
+      position: {x: -0, y: 0.0498, z: 0.0107}
+      rotation: {x: -0.01042657, y: -0.0045231585, z: -0.010764128, w: 0.9998775}
       scale: {x: 1, y: 1, z: 1}
     - name: port:HeadTop_End
       parentName: port:Head
-      position: {x: -0, y: 0.2438, z: 0.0523}
+      position: {x: -0, y: 0.2404, z: 0.0518}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftShoulder
       parentName: port:Spine2
-      position: {x: -0.0512, y: 0.1046, z: -0.0005}
-      rotation: {x: 0.616358, y: -0.35887006, z: 0.5401477, w: 0.4467164}
+      position: {x: -0.0514, y: 0.1025, z: -0.0007}
+      rotation: {x: 0.5656312, y: -0.4508111, z: 0.53983015, w: 0.4305975}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftArm
       parentName: port:LeftShoulder
-      position: {x: -0, y: 0.1074, z: 0}
-      rotation: {x: -0.14318956, y: -0.017217495, z: 0.012683803, w: 0.9894643}
+      position: {x: -0, y: 0.11, z: 0}
+      rotation: {x: -0.12625651, y: 0.40192366, z: -0.044078242, w: 0.9058553}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftForeArm
       parentName: port:LeftArm
-      position: {x: -0, y: 0.2182, z: 0}
-      rotation: {x: -0.02091982, y: 0.31544942, z: -0.0017745412, w: 0.94871014}
+      position: {x: -0, y: 0.225, z: 0}
+      rotation: {x: -0.016846258, y: 0.007475434, z: -0.03991516, w: 0.99903315}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHand
       parentName: port:LeftForeArm
-      position: {x: -0, y: 0.2415, z: 0}
-      rotation: {x: 0.032292955, y: -0.010497012, z: 0.039641272, w: 0.99863684}
+      position: {x: -0, y: 0.2589, z: 0}
+      rotation: {x: 0.0028272201, y: 0.07599214, z: 0.05098648, w: 0.99579996}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandThumb1
       parentName: port:LeftHand
-      position: {x: 0.0235, y: 0.0354, z: 0.0004}
-      rotation: {x: 0.26454082, y: -0.00333282, z: -0.44040576, w: 0.8579335}
+      position: {x: 0.0241, y: 0.0232, z: 0.0029}
+      rotation: {x: 0.20671763, y: -0.3702114, z: -0.43099454, w: 0.7965269}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandThumb2
       parentName: port:LeftHandThumb1
-      position: {x: -0.0084, y: 0.0329, z: 0}
-      rotation: {x: -0.008290437, y: -0.105142295, z: 0.33336687, w: 0.9368794}
+      position: {x: -0.0036, y: 0.0266, z: 0}
+      rotation: {x: -0.0047650905, y: 0.005105939, z: 0.23351659, w: 0.9723277}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandThumb3
       parentName: port:LeftHandThumb2
-      position: {x: 0.0101, y: 0.0266, z: 0}
-      rotation: {x: -0.04053941, y: -0.46044883, z: -0.18122935, w: 0.8680435}
+      position: {x: 0.0076, y: 0.0266, z: 0}
+      rotation: {x: -0.006083354, y: 0.006274431, z: -0.21572913, w: 0.9764141}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandThumb4
       parentName: port:LeftHandThumb3
-      position: {x: -0.0016, y: 0.0205, z: 0}
+      position: {x: -0.004, y: 0.0196, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandIndex1
       parentName: port:LeftHand
-      position: {x: 0.0314, y: 0.1101, z: -0.0011}
-      rotation: {x: 0.04589471, y: -0.03489384, z: -0.04714534, w: 0.9972229}
+      position: {x: 0.0314, y: 0.0861, z: 0.0004}
+      rotation: {x: 0.05547633, y: -0.050460454, z: -0.04487691, w: 0.9961738}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandIndex2
       parentName: port:LeftHandIndex1
       position: {x: -0, y: 0.0277, z: 0}
-      rotation: {x: 0.0141525855, y: -0.025655454, z: -0.0007425482, w: 0.99957037}
+      rotation: {x: 0.0043561948, y: -0.0054240525, z: 0.00066890405, w: 0.99997556}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandIndex3
       parentName: port:LeftHandIndex2
       position: {x: -0, y: 0.0274, z: 0}
-      rotation: {x: 0.013259428, y: -0.011993875, z: 0.00039337217, w: 0.99984014}
+      rotation: {x: 0.024506241, y: 0.008565153, z: 0.005417754, w: 0.99964833}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandIndex4
       parentName: port:LeftHandIndex3
@@ -630,18 +630,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandMiddle1
       parentName: port:LeftHand
-      position: {x: 0.0101, y: 0.1194, z: -0.001}
-      rotation: {x: 0.04816206, y: 0.067382134, z: -0.04267431, w: 0.9956501}
+      position: {x: 0.01, y: 0.0953, z: -0.0004}
+      rotation: {x: 0.059988618, y: 0.043437, z: -0.048246555, w: 0.9960858}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandMiddle2
       parentName: port:LeftHandMiddle1
       position: {x: -0, y: 0.0302, z: 0}
-      rotation: {x: 0.010179679, y: -0.033183508, z: -0.0003518677, w: 0.99939734}
+      rotation: {x: 0.005530468, y: 0.0056598363, z: 0.001052412, w: 0.9999682}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandMiddle3
       parentName: port:LeftHandMiddle2
       position: {x: -0, y: 0.0278, z: 0}
-      rotation: {x: 0.014280903, y: -0.010068136, z: 0.0005747903, w: 0.9998472}
+      rotation: {x: 0.026789546, y: -0.0028086721, z: 0.004445578, w: 0.9996273}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandMiddle4
       parentName: port:LeftHandMiddle3
@@ -650,18 +650,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandRing1
       parentName: port:LeftHand
-      position: {x: -0.0118, y: 0.1177, z: -0.0044}
-      rotation: {x: 0.047250796, y: 0.08485733, z: -0.04114989, w: 0.9944211}
+      position: {x: -0.0118, y: 0.0933, z: -0.0038}
+      rotation: {x: 0.06533476, y: 0.13580455, z: -0.04605638, w: 0.9875056}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandRing2
       parentName: port:LeftHandRing1
       position: {x: -0, y: 0.0268, z: 0}
-      rotation: {x: 0.016434465, y: 0.006062787, z: 0.00039931032, w: 0.9998466}
+      rotation: {x: 0.013900549, y: -0.019500798, z: 0.0033523764, w: 0.99970764}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandRing3
       parentName: port:LeftHandRing2
       position: {x: -0, y: 0.0261, z: 0}
-      rotation: {x: 0.011977187, y: 0.008339708, z: 0.00067754247, w: 0.9998933}
+      rotation: {x: 0.012489255, y: 0.0035910758, z: 0.0027479425, w: 0.9999118}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandRing4
       parentName: port:LeftHandRing3
@@ -670,98 +670,98 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandPinky1
       parentName: port:LeftHand
-      position: {x: -0.0296, y: 0.106, z: -0.0008}
-      rotation: {x: 0.052897472, y: 0.17074391, z: -0.039909758, w: 0.9830848}
+      position: {x: -0.0296, y: 0.0817, z: 0.0006}
+      rotation: {x: 0.07370235, y: 0.2332061, z: -0.041928634, w: 0.96872336}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandPinky2
       parentName: port:LeftHandPinky1
       position: {x: -0, y: 0.0215, z: 0}
-      rotation: {x: 0.011266808, y: 0.00001931189, z: 0.0008406782, w: 0.9999362}
+      rotation: {x: 0.0064394833, y: -0.008289469, z: 0.001437239, w: 0.9999439}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandPinky3
       parentName: port:LeftHandPinky2
       position: {x: -0, y: 0.0187, z: 0}
-      rotation: {x: 0.022382133, y: -0.0004813006, z: 0.0049780114, w: 0.99973696}
+      rotation: {x: 0.017161569, y: 0.004279632, z: 0.004102913, w: 0.9998352}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftHandPinky4
       parentName: port:LeftHandPinky3
-      position: {x: 0.0001, y: 0.0151, z: 0}
+      position: {x: -0, y: 0.0151, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightShoulder
       parentName: port:Spine2
-      position: {x: 0.0512, y: 0.1046, z: -0.0004}
-      rotation: {x: -0.44310194, y: -0.44459674, z: 0.6653692, w: -0.40407714}
+      position: {x: 0.0514, y: 0.1025, z: -0.0004}
+      rotation: {x: 0.62471306, y: 0.37230265, z: -0.55743766, w: 0.40048444}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightArm
       parentName: port:RightShoulder
-      position: {x: -0, y: 0.1074, z: 0}
-      rotation: {x: -0.12013878, y: 0.007967766, z: 0.077150054, w: 0.9897228}
+      position: {x: -0, y: 0.11, z: 0}
+      rotation: {x: -0.13656695, y: 0.03547466, z: -0.052832525, w: 0.9885847}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightForeArm
       parentName: port:RightArm
-      position: {x: -0, y: 0.2181, z: 0}
-      rotation: {x: -0.019557318, y: -0.047135483, z: 0.016087685, w: 0.9985675}
+      position: {x: -0, y: 0.2249, z: 0}
+      rotation: {x: -0.0107039185, y: -0.15593264, z: 0.030584596, w: 0.98723614}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHand
       parentName: port:RightForeArm
-      position: {x: -0, y: 0.2409, z: 0}
-      rotation: {x: 0.09319035, y: 0.018648302, z: 0.1980827, w: 0.97556704}
+      position: {x: -0, y: 0.2587, z: 0}
+      rotation: {x: -0.05566042, y: -0.23692355, z: -0.019900097, w: 0.96972835}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandThumb1
       parentName: port:RightHand
-      position: {x: -0.0221, y: 0.0353, z: 0.0005}
-      rotation: {x: 0.121208325, y: -0.09085513, z: 0.51738954, w: 0.8422363}
+      position: {x: -0.0259, y: 0.0214, z: 0.0039}
+      rotation: {x: 0.23233436, y: 0.0045317532, z: 0.38382557, w: 0.8936879}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandThumb2
       parentName: port:RightHandThumb1
-      position: {x: 0.0107, y: 0.0316, z: 0}
-      rotation: {x: -0.036550768, y: 0.15724172, z: -0.30072683, w: 0.93994814}
+      position: {x: 0.0028, y: 0.0269, z: 0}
+      rotation: {x: -0.004127382, y: -0.028903324, z: -0.16802824, w: 0.9853498}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandThumb3
       parentName: port:RightHandThumb2
-      position: {x: -0.0086, y: 0.0272, z: 0}
-      rotation: {x: 0.0029913608, y: -0.14414804, z: 0.08909655, w: 0.9855325}
+      position: {x: -0.0045, y: 0.0262, z: 0}
+      rotation: {x: 0.002513365, y: 0.0069399183, z: 0.15683192, w: 0.9875977}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandThumb4
       parentName: port:RightHandThumb3
-      position: {x: -0.0021, y: 0.0269, z: 0}
+      position: {x: 0.0016, y: 0.0223, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandIndex1
       parentName: port:RightHand
-      position: {x: -0.032, y: 0.1145, z: -0.0005}
-      rotation: {x: 0.054630615, y: -0.008925321, z: 0.03883168, w: 0.99771136}
+      position: {x: -0.031, y: 0.0865, z: 0.0011}
+      rotation: {x: 0.002207379, y: 0.0007890167, z: 0.059606034, w: 0.99821925}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandIndex2
       parentName: port:RightHandIndex1
       position: {x: -0, y: 0.0276, z: 0}
-      rotation: {x: 0.014508161, y: 0.025256911, z: 0.00093558757, w: 0.9995753}
+      rotation: {x: 0.041398253, y: 0.00013877686, z: -0.0009240749, w: 0.99914235}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandIndex3
       parentName: port:RightHandIndex2
-      position: {x: -0, y: 0.0263, z: 0}
-      rotation: {x: 0.017687926, y: 0.01460652, z: -0.00030328825, w: 0.99973685}
+      position: {x: -0, y: 0.0268, z: 0}
+      rotation: {x: -0.024811262, y: 0.00039770408, z: -0.017363068, w: 0.9995413}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandIndex4
       parentName: port:RightHandIndex3
-      position: {x: -0, y: 0.0206, z: 0}
+      position: {x: -0, y: 0.0222, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandMiddle1
       parentName: port:RightHand
-      position: {x: -0.0101, y: 0.1216, z: -0.0015}
-      rotation: {x: 0.0517139, y: -0.008783504, z: 0.04175249, w: 0.9977501}
+      position: {x: -0.0104, y: 0.0941, z: -0.0008}
+      rotation: {x: 0.017652763, y: 0.0025158823, z: 0.0031558333, w: 0.9998361}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandMiddle2
       parentName: port:RightHandMiddle1
       position: {x: -0, y: 0.0297, z: 0}
-      rotation: {x: 0.006747583, y: 0.038184512, z: 0.00030059423, w: 0.9992479}
+      rotation: {x: 0.032244004, y: 0.0046801553, z: -0.006219143, w: 0.99944973}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandMiddle3
       parentName: port:RightHandMiddle2
       position: {x: -0, y: 0.0291, z: 0}
-      rotation: {x: 0.029021392, y: 0.0046001533, z: -0.0014748692, w: 0.9995672}
+      rotation: {x: -0.039132714, y: 0.00040233898, z: 0.01223684, w: 0.99915904}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandMiddle4
       parentName: port:RightHandMiddle3
@@ -770,18 +770,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandRing1
       parentName: port:RightHand
-      position: {x: 0.0105, y: 0.1196, z: -0.003}
-      rotation: {x: 0.04758831, y: -0.027003901, z: 0.03817482, w: 0.997772}
+      position: {x: 0.0102, y: 0.092, z: -0.0022}
+      rotation: {x: 0.021216271, y: 0.008216603, z: -0.02264755, w: 0.99948466}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandRing2
       parentName: port:RightHandRing1
       position: {x: -0, y: 0.0276, z: 0}
-      rotation: {x: 0.011663596, y: 0.001109478, z: 0.000098558965, w: 0.99993145}
+      rotation: {x: 0.031214893, y: 0.007794939, z: -0.0049936688, w: 0.9994698}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandRing3
       parentName: port:RightHandRing2
       position: {x: -0, y: 0.0267, z: 0}
-      rotation: {x: 0.026528632, y: -0.00428829, z: -0.0010550208, w: 0.9996384}
+      rotation: {x: 0.03404228, y: 0.0055246176, z: -0.007536385, w: 0.9993768}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandRing4
       parentName: port:RightHandRing3
@@ -790,18 +790,18 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandPinky1
       parentName: port:RightHand
-      position: {x: 0.0315, y: 0.114, z: -0.0002}
-      rotation: {x: 0.045332413, y: -0.049395613, z: 0.042303286, w: 0.9968528}
+      position: {x: 0.0312, y: 0.0867, z: 0.0011}
+      rotation: {x: 0.032998435, y: -0.0062080445, z: -0.010597005, w: 0.99937993}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandPinky2
       parentName: port:RightHandPinky1
-      position: {x: -0, y: 0.0195, z: 0}
-      rotation: {x: 0.019878348, y: 0.000009957693, z: -0.0007599281, w: 0.9998021}
+      position: {x: 0.0001, y: 0.0195, z: 0}
+      rotation: {x: 0.03486185, y: 0.026128408, z: -0.008412163, w: 0.9990152}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandPinky3
       parentName: port:RightHandPinky2
       position: {x: -0, y: 0.0172, z: 0}
-      rotation: {x: 0.032173183, y: -0.0000048503553, z: -0.001236906, w: 0.99948156}
+      rotation: {x: 0.029653555, y: 0.044222314, z: -0.0075610066, w: 0.998553}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightHandPinky4
       parentName: port:RightHandPinky3
@@ -810,23 +810,23 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftUpLeg
       parentName: port:Hips
-      position: {x: -0.0851, y: -0.0458, z: -0.0019}
-      rotation: {x: -0.4292001, y: 0.07944112, z: 0.89740646, w: 0.064327665}
+      position: {x: -0.0809, y: -0.0449, z: -0.0045}
+      rotation: {x: -0.19048594, y: -0.015607537, z: 0.9802531, w: 0.05074777}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftLeg
       parentName: port:LeftUpLeg
-      position: {x: -0, y: 0.4055, z: 0}
-      rotation: {x: -0.31056482, y: -0.14631477, z: -0.0019742546, w: 0.93922186}
+      position: {x: -0, y: 0.4109, z: 0}
+      rotation: {x: -0.32401595, y: -0.061583526, z: 0.021254253, w: 0.9438058}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftFoot
       parentName: port:LeftLeg
-      position: {x: -0, y: 0.4094, z: 0}
-      rotation: {x: 0.6677783, y: -0.08488848, z: 0.0697494, w: 0.7362073}
+      position: {x: -0, y: 0.413, z: 0}
+      rotation: {x: 0.73063725, y: -0.02523563, z: 0.03216705, w: 0.68154067}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftToeBase
       parentName: port:LeftFoot
       position: {x: -0, y: 0.13, z: 0}
-      rotation: {x: 0.33280727, y: -0.03679204, z: 0.01728838, w: 0.9421182}
+      rotation: {x: 0.31939113, y: 0.002754858, z: -0.001072549, w: 0.94761837}
       scale: {x: 1, y: 1, z: 1}
     - name: port:LeftToe_End
       parentName: port:LeftToeBase
@@ -835,23 +835,23 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightUpLeg
       parentName: port:Hips
-      position: {x: 0.0851, y: -0.0458, z: 0.0004}
-      rotation: {x: 0.26877162, y: 0.06885106, z: 0.9543663, w: -0.11048197}
+      position: {x: 0.0809, y: -0.0449, z: -0.0065}
+      rotation: {x: 0.2707306, y: 0.011982819, z: 0.9528393, w: -0.1365961}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightLeg
       parentName: port:RightUpLeg
-      position: {x: -0, y: 0.4055, z: 0}
-      rotation: {x: -0.32347742, y: 0.008906958, z: 0.030884396, w: 0.9456898}
+      position: {x: -0, y: 0.4109, z: 0}
+      rotation: {x: -0.3158997, y: 0.04144826, z: 0.013624404, w: 0.9477889}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightFoot
       parentName: port:RightLeg
-      position: {x: -0, y: 0.4094, z: 0}
-      rotation: {x: 0.65848005, y: -0.018064484, z: -0.17024198, w: 0.73286796}
+      position: {x: -0, y: 0.4131, z: 0}
+      rotation: {x: 0.68937504, y: -0.0036347397, z: -0.13252524, w: 0.7121699}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightToeBase
       parentName: port:RightFoot
       position: {x: -0, y: 0.1291, z: 0}
-      rotation: {x: 0.31839198, y: 0.006360017, z: -0.000439973, w: 0.9479377}
+      rotation: {x: 0.30699638, y: -0.0028451427, z: 0.0009210988, w: 0.951706}
       scale: {x: 1, y: 1, z: 1}
     - name: port:RightToe_End
       parentName: port:RightToeBase
