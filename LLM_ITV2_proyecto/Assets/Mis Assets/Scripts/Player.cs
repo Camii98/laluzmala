@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     private Animator mAnimator;
 
     public float respawnDelay = 1f;
-    public float moveDelay = 1f;
+    public float moveDelay = 125f;
 
     vThirdPersonInput _Move;
 
@@ -19,6 +19,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform respawnPoint;
 
     public HealthBar healthBar;
+    public BoxCollider attackRange;
+    public Transform attackPoint;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +37,14 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(Input.GetMouseButtonDown(0))
+        {
+            Attack(0);
+        }
+        else if(Input.GetMouseButtonDown(1))
+        {
+            Attack(1);
+        }
     }
 
     public void TakeDamage(int amount)
@@ -44,13 +53,14 @@ public class Player : MonoBehaviour
         if (currentHealth < 0)
         {
             mAnimator.SetTrigger("TrDeath");
-            _Move.enabled = false;
+            move();
             Invoke("Respawn", respawnDelay);
+            healthBar.SetHealth(currentHealth);
         }
         {
             healthBar.SetHealth(currentHealth);
         }
-}
+    }
     void Respawn ()
     {
         mAnimator.SetTrigger("TrStand");
@@ -58,16 +68,34 @@ public class Player : MonoBehaviour
         
         
         healthBar.SetMaxHealth(maxHealth);
-
-        
-        Invoke("move", moveDelay);
-
-
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
+        Debug.Log("wait");
+        Invoke("move", moveDelay);      
     }
     void move()
     {
-        _Move.enabled = true;
+        _Move.enabled = !_Move.enabled;
+        Debug.Log("NOW");
+    }
 
+    void Attack(int attack_type)
+    {
+        if(attack_type == 0)
+        {
+            mAnimator.SetTrigger("small_attack");
+            Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position,.5f,3);
+            foreach (Collider enemy in hitEnemies){
+                Debug.Log("take that");
+            }
+            {
+                
+            }
+        }
+        else if(attack_type == 1)
+        {
+            mAnimator.SetTrigger("Big_attack");
+        };
     }
 }
 
