@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
     
     public LayerMask bastards;
     public HealthBar healthBar;
-    public BoxCollider attackRange;
     public Transform attackPoint;
 
     // Start is called before the first frame update
@@ -51,7 +50,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
         {
             mAnimator.SetTrigger("TrDeath");
             move();
