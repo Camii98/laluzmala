@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
 
     [SerializeField] private Transform player;
     [SerializeField] private Transform respawnPoint;
-
+    
+    public LayerMask bastards;
     public HealthBar healthBar;
     public BoxCollider attackRange;
     public Transform attackPoint;
@@ -81,21 +82,28 @@ public class Player : MonoBehaviour
 
     void Attack(int attack_type)
     {
+
         if(attack_type == 0)
         {
             mAnimator.SetTrigger("small_attack");
-            Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position,.5f,3);
+            Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position,0.5f,bastards);
             foreach (Collider enemy in hitEnemies){
                 Debug.Log("take that");
-            }
-            {
-                
+                Debug.Log(enemy.name);
+                enemy.GetComponent<EnemyBehavior>().TakeDamage(2);
             }
         }
         else if(attack_type == 1)
         {
             mAnimator.SetTrigger("Big_attack");
+            Collider[] hitEnemies = Physics.OverlapSphere(attackPoint.position,0.8f,bastards);
+            foreach (Collider enemy in hitEnemies){
+                Debug.Log("take that");
+                Debug.Log(enemy.name);
+                enemy.GetComponent<EnemyBehavior>().TakeDamage(3);
+            }
         };
     }
+
 }
 

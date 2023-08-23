@@ -685,6 +685,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 43acc29b5f7790740806f9ba9fb17129, type: 3}
       insertIndex: -1
       addedObject: {fileID: 59347905}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 43acc29b5f7790740806f9ba9fb17129, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 59347910}
   m_SourcePrefab: {fileID: 100100000, guid: 43acc29b5f7790740806f9ba9fb17129, type: 3}
 --- !u!1 &59347904 stripped
 GameObject:
@@ -746,6 +749,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 43acc29b5f7790740806f9ba9fb17129, type: 3}
   m_PrefabInstance: {fileID: 59347903}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &59347910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59347904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20d0ce42c37514a478d343ecc3ed654d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &82597272
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,7 +926,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1760018662390760215, guid: 2cc553abb6e50994e88df50969a051b8, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8710695691649901906, guid: 2cc553abb6e50994e88df50969a051b8, type: 3}
       propertyPath: m_Name
@@ -919,7 +934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8710695691649901906, guid: 2cc553abb6e50994e88df50969a051b8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9120004598901094072, guid: 2cc553abb6e50994e88df50969a051b8, type: 3}
       propertyPath: m_RootOrder
@@ -1157,59 +1172,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.007041592, y: -0.37305862, z: 0.015153555}
     m_Extent: {x: 0.07286833, y: 0.81624705, z: 0.044285238}
   m_DirtyAABB: 0
---- !u!1 &218785934
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 218785935}
-  - component: {fileID: 218785936}
-  m_Layer: 0
-  m_Name: attack_range
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &218785935
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218785934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.8, z: 0.7}
-  m_LocalScale: {x: 1, y: 1.5, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1485220323}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &218785936
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218785934}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &231375584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,7 +1629,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413900138}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.086, z: 0.807}
+  m_LocalPosition: {x: 0, y: 1.086, z: 0.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4290,7 +4252,6 @@ Transform:
   m_Children:
   - {fileID: 683092921}
   - {fileID: 1309800312}
-  - {fileID: 218785935}
   - {fileID: 413900139}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -4313,8 +4274,11 @@ MonoBehaviour:
   moveDelay: 4
   player: {fileID: 1485220323}
   respawnPoint: {fileID: 1733183526}
+  bastards:
+    serializedVersion: 2
+    m_Bits: 8
   healthBar: {fileID: 603286498}
-  attackRange: {fileID: 218785936}
+  attackRange: {fileID: 0}
   attackPoint: {fileID: 413900139}
 --- !u!1 &1505253960
 GameObject:
